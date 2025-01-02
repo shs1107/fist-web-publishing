@@ -1,0 +1,30 @@
+.pic {
+    margin: 50px 50px;
+    position: absolute;
+}
+
+.pic::before,
+.pic::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px
+}
+
+.pic::before {
+    top: -10px;
+    right: -10px;
+    border-top: 30px solid #ea987e;
+    border-right: 30px solid #ea987e;
+    border-bottom: 30px solid rgba(0 0 0 / 0);
+    border-left: 30px solid rgba(0 0 0 / 0);
+}
+
+.pic::after {
+    bottom: -10px;
+    left: -10px;
+    border-top: 30px solid rgba(0 0 0 / 0);
+    border-right: 30px solid rgba(0 0 0 / 0);
+    border-bottom: 30px solid #ea987e;
+    border-left: 30px solid #ea987e;
+}

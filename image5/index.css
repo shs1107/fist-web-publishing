@@ -1,0 +1,23 @@
+.pic {
+    position:absolute;
+}
+
+.pic::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-image-source: repeating-linear-gradient(
+        45deg,
+        #ea987e 0px, #ea987a 2px,
+        rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px
+    );
+    border-image-slice: 20;
+    border-width: 20px;
+    border-image-repeat: round;
+    border-style:solid;
+    
+}
